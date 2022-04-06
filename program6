@@ -1,0 +1,27 @@
+class staff06:
+    def __init__(self, first, surname, dob, branch):
+        self.first = first
+        self.surname = surname
+        self.dob = dob
+        self.branch = branch
+
+class newStaff2(staff06):
+    def __init__(self, first, surname, dob, branch, discipline, licence):
+        super().__init__(first, surname, dob, branch)
+        self.discipline = discipline
+        self.licence = licence
+
+
+firstInput = input("Enter staff's First Name: ")
+surnameInput = input("Enter staff's Surname: ")
+dobInput = input("Enter staff's Date of Birth: ")
+branchInput = input("Enter staff's Department: ")
+disciplineInput = input("Enter staff's Discipline: ")
+licenceInput = input("Enter staff's License Number: ")
+
+staff07 = newStaff2(firstInput, surnameInput, dobInput, branchInput, disciplineInput, licenceInput)
+print (staff07.first, staff07.surname)
+print (staff07.dob)
+print (staff07.branch)
+print (staff07.discipline)
+print (staff07.licence)
